@@ -1,16 +1,36 @@
-# React + Vite
+# DnD Character Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Random D&D 5e character generator. Generates a random character with race, class, alignment, abilities, inventory, motto, and background using the [D&D 5e API](https://www.dnd5eapi.co/).
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+👉 [https://dnd-character-generator-gules.vercel.app](https://dnd-character-generator-gules.vercel.app)
 
-## React Compiler
+## 🛠 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 18 + Vite
+- React Hooks (useState, useEffect, useLocalStorage)
+- REST API (Promise.all, fetch)
+- CSS Flexbox / Grid
+- Responsive Design
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Generate random D&D character (race, class, alignment, abilities)
+- Random inventory from 237 equipment items
+- Character avatar based on race and gender
+- Dynamic background for each race
+- Save characters to localStorage
+- Delete saved characters
+- Responsive design (desktop / tablet / mobile)
+
+## 📦 Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+## 📸 Screenshot
+
+![DnD Character Generator Screenshot](public/general/preview.png)
