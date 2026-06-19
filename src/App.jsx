@@ -4,7 +4,6 @@ import SavedCharacters from "./pages/SavedCharacters";
 import { useLocalStorage } from "./hooks/useLocalStorage";
 import "./App.css";
 
-
 function App() {
   const [savedCharacters, setSavedCharacters] = useLocalStorage(
     "saved-characters",
@@ -18,10 +17,18 @@ function App() {
 
   return (
     <>
-      <nav>
-        <Link to="/">Generator</Link>
-        <Link to="/saved">Collection ({savedCharacters.length})</Link>
-      </nav>
+      <header>
+        <Link className="home" to="/">
+          <img className="logo" src="/general/dice.svg" />
+          <h1>Roll for hero</h1>
+        </Link>
+
+        <nav>
+          <Link to="/">Generator</Link>
+          <Link to="/saved">Collection ({savedCharacters.length})</Link>
+        </nav>
+      </header>
+
       <Routes>
         <Route
           path="/"
