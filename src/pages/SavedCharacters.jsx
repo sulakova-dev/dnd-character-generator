@@ -1,8 +1,18 @@
 import "./SavedCharacters.css";
+import { Link } from "react-router-dom";
 
 function SavedCharacters({ savedCharacters, onDelete }) {
   if (!savedCharacters.length) {
-    return <p>No saved characters yet.</p>;
+    return (
+      <main>
+        <p className="empty-state">
+          Your collection is empty. Ready to roll your first hero?
+        </p>
+        <Link to="/" className="btn-create">
+          Create your first character
+        </Link>
+      </main>
+    );
   }
 
   return (
