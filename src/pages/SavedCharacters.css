@@ -14,7 +14,7 @@ main {
   font-size: 1.25rem;
   font-weight: 600;
   color: #141413;
-  padding: 1em 0;
+  padding: 1em 0 1.2em 0;
 }
 
 .collection-header span {
@@ -25,19 +25,19 @@ main {
 
 .saved-grid {
   display: grid;
-  flex-direction: row;
-  gap: 1em;
+  gap: 1.5em;
   grid-template-columns: repeat(4, 1fr);
 }
 
 .saved-card {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: flex-end;
-  width: 180px;
-  height: 240px;
+  width: 240px;
+  height: 300px;
   border-radius: 1em;
-  padding-bottom: 0.5em;
+  padding-bottom: 1em;
 }
 
 .saved-card-footer p {
@@ -46,23 +46,40 @@ main {
     0 2px 4px rgba(0, 0, 0, 0.7),
     0 0 30px rgba(0, 0, 0, 0.5),
     0 0 60px rgba(0, 0, 0, 0.3);
-  padding: 0 0 0 0.8rem;
+  margin: 0;
 }
 
 .saved-name {
   font-size: 1.25rem;
   font-weight: 600;
+  padding-left: 0.8rem;
+  padding-bottom: 0.1em;
 }
 
 .saved-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 500;
+  padding-left: 0.8rem;
+  padding-right: 2em;
+  color: #fff;
+  text-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.7),
+    0 0 30px rgba(0, 0, 0, 0.5),
+    0 0 60px rgba(0, 0, 0, 0.3);
 }
 
 .saved-card button {
-  border-radius: 50%;
+  position: absolute;
+  top: 14px;
+  right: 8px;
+  border-radius: 1em;
   background: rgba(0, 0, 0, 0.4);
   color: #fff;
   border: none;
   cursor: pointer;
+  width: 36px;
+  height: 36px;
 }

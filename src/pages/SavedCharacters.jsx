@@ -27,9 +27,12 @@ function SavedCharacters({ savedCharacters, onDelete }) {
               <button onClick={() => onDelete(char.id)}>X</button>
               <div className="saved-card-footer">
                 <p className="saved-name">{char.name}</p>
-                <p className="saved-detail">
-                  {char.race} • {char.class}
-                </p>
+                <div className="saved-detail">
+                  <p>
+                    {char.race} • {char.class}
+                  </p>
+                  <p>level {char.lvl}</p>
+                </div>
               </div>
             </div>
           ))}
